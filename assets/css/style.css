@@ -22,7 +22,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  min-height: 52vh;
+  min-height: 40vh;
   background-color: #fff7df;
   border-radius: 110px;
   margin-top: 15px;
@@ -50,7 +50,7 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 1.3em;
   padding: 17px 23px;
   width: 45%;
   border-radius: 35px;
@@ -137,25 +137,119 @@ h2:nth-of-type(2) {
   padding: 0 0 20px;
 }
 
-.card:nth-of-type(6) {
+#card-p {
   display: flex;
   flex-direction: column;
   gap: 17px;
   padding: 30px 20px;
   margin-bottom: 0;
+  background-color: #fff7df;
 }
 
-.card:nth-of-type(6) h3 {
+#card-p h3 {
   font-size: 23px;
 }
 
-.card:nth-of-type(6) p {
+#card-p p {
   font-size: 20px;
   line-height: 1.4;
 }
 
-.card:nth-of-type(6) img {
+#card-p img {
   width: 80%;
   margin-block: 10px;
   align-self: center;
+}
+
+@media screen and (min-width: 790px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    border-radius: unset;
+    margin: 0;
+    min-height: 10vh;
+    gap: 5px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  #logo-shop {
+    display: flex;
+    gap: 10px;
+    min-width: 20%;
+  }
+
+  #logo-shop img {
+    height: 30px;
+  }
+
+  .header-box {
+    font-size: 1em;
+    width: 20%;
+  }
+
+  .header-box:nth-of-type(1) {
+    order: 3;
+    flex-grow: 5;
+  }
+
+  .header-box:nth-of-type(2) {
+    order: 1;
+  }
+
+  .header-box:nth-of-type(3) {
+    order: 2;
+  }
+
+  .header-box:nth-of-type(4) {
+    order: 4;
+  }
+
+  .header-box:nth-of-type(5) {
+    order: 5;
+  }
+
+  main {
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-inline: 15px;
+    gap: 25px;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 45px;
+    padding: 40px 0 20px;
+  }
+
+  .card {
+    width: 45%;
+    max-height: 380px;
+    padding: 0;
+    flex-grow: 2;
+  }
+
+  .card > div:nth-of-type(2) {
+    padding: 1em 3em;
+  }
+
+  .card:nth-of-type(5) {
+    display: none;
+  }
+
+  #card-p {
+    max-width: 100%;
+  }
+
+  #card-p img {
+    width: 100%;
+  }
 }
