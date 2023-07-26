@@ -262,7 +262,7 @@ h2:nth-of-type(2) {
     gap: 50px;
   }
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
   }
 
@@ -278,7 +278,7 @@ h2:nth-of-type(2) {
   }
 
   #logo-shop {
-    gap: 30px;
+    gap: 10%;
   }
 
   #logo-shop img {
@@ -342,12 +342,24 @@ h2:nth-of-type(2) {
 }
 
 @media screen and (min-width: 1300px) {
+  header {
+    max-width: 20%;
+  }
+  main {
+    padding-inline: 30px;
+    max-width: 80%;
+    margin-left: 20%;
+  }
+
+  #logo-shop {
+    gap: 20px;
+  }
   .card:nth-of-type(4) {
     display: block;
   }
 
   .card {
-    width: calc((100% - 30%) / 4);
+    width: calc((100% - 20%) / 4);
     max-height: unset;
   }
 }
