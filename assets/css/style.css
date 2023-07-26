@@ -142,7 +142,7 @@ h2:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   gap: 17px;
-  padding: 30px 20px;
+  padding: 35px;
   margin-bottom: 0;
   background-color: #fff7df;
   border-radius: 35px;
@@ -150,6 +150,7 @@ h2:nth-of-type(2) {
 
 #card-p h3 {
   font-size: 23px;
+  font-weight: 800;
 }
 
 #card-p p {
@@ -337,5 +338,16 @@ h2:nth-of-type(2) {
 
   .main-box {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .card:nth-of-type(4) {
+    display: block;
+  }
+
+  .card {
+    width: calc((100% - 30%) / 4);
+    max-height: unset;
   }
 }
